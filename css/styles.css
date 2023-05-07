@@ -152,7 +152,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-txt-clr);
   transition-property: color;
-  transition: var(--anim-fast);
+  transition: color var(--anim-fast);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -198,7 +198,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-txt-clr);
   transition-property: color;
-  transition: var(--anim-fast);
+  transition: color var(--anim-fast);
 }
 .link-address:hover,
 .link-address:focus {
