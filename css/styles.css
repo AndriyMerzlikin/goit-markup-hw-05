@@ -567,12 +567,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition-property: opacity, trasform, transition-delay;
-  transition: opacity var(--anim-fast), transform var(--anim-fast);
+  transition-property: trasform, transition-delay;
+  transition: transform var(--anim-fast);
   transition-delay: 250ms;
 }
 .backdrop.is-hidden .modal {
-  opacity: 0;
   transform: translate(-50%, -70%);
   transition-delay: 0ms;
 }
