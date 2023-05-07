@@ -624,8 +624,8 @@ body {
   transition-property: transform;
   transition: transform var(--anim-fast);
 }
-.advantages-list:hover .overlay,
-.advantages-list:focus .overlay {
+.card:hover .overlay,
+.card:focus .overlay {
   transform: translateY(0);
 }
 .overlay-text {
