@@ -151,6 +151,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-txt-clr);
+  transition-property: color;
+  transition: var(--anim-fast);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -160,7 +162,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -195,6 +197,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-clr);
+  transition-property: color;
+  transition: var(--anim-fast);
 }
 .link-address:hover,
 .link-address:focus {
@@ -236,10 +240,12 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition-property: background-color;
+  transition: var(--anim-fast);
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
 }
 .hero-title {
   margin-right: auto;
@@ -349,10 +355,12 @@ body {
   height: 40px;
   background: var(--active-btn-clr);
   border-radius: 50%;
+  transition-property: background-color;
+  transition: var(--anim-fast);
 }
 .socials-link:hover,
 .socials-link:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 /* CUSTOMERS SECTION */
@@ -370,6 +378,8 @@ body {
   border: 1px solid var(--light-slate-clr);
   border-radius: 4px;
   color: var(--light-slate-clr);
+  transition-property: color, border-color;
+  transition: var(--anim-fast);
 }
 .customers-logo-link:hover,
 .customers-logo-link:focus {
@@ -515,12 +525,14 @@ body {
   align-items: center;
   width: 40px;
   height: 40px;
-  background: var(--active-btn-clr);
+  background-color: var(--active-btn-clr);
   border-radius: 50%;
+  transition-property: background-color;
+  transition: var(--anim-fast);
 }
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-  background: var(--footer-icon-clr);
+  background-color: var(--footer-icon-clr);
 }
 
 /* MODAL WINDOW */
@@ -584,9 +596,7 @@ body {
 .overlay {
   width: 100%;
   height: 100%;
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding: 40px 32px;
   position: absolute;
   top: 0;
   left: 0;
